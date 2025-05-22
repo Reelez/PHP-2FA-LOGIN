@@ -68,4 +68,4 @@
 
    ## Licencia
 
-   Este proyecto está licenciado bajo la Licencia MIT.
+   Este proyecto está licenciado bajo la Licencia AFL-3.0.
