@@ -1,0 +1,102 @@
+/* Fondo de la pantalla */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #fcf7d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor centrado con sombra y fondo blanco */
+.container {
+    width: 400px;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h2 {
+    font-weight: 700;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Separador entre campos */
+form > div.mb-3 {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border: 1px solid #0d6efd; /* línea vertical azul bootstrap */
+    background-color: #f1f5ff; /* fondo azul muy claro */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form > div.mb-3:hover {
+    background-color: #e0e7ff; /* un poco más fuerte al hover */
+}
+
+/* Label estilizado */
+label.form-label {
+    font-weight: 600;
+    
+    margin-bottom: 8px;
+}
+
+/* Inputs y selects con bordes redondeados y sombra suave */
+input.form-control,
+select.form-select {
+    border-radius: 12px !important;
+    border: 1.8px solid #ced4da !important;
+    padding: 10px 14px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+    
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.25);
+    outline: none;
+}
+
+/* Botón personalizado */
+button.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+button.btn-primary:hover {
+    background-color: #084cd5;
+    box-shadow: 0 6px 12px rgba(13, 110, 253, 0.4);
+}
+
+/* Mensajes de alerta centrados */
+.alert {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+/* Responsive: reducir padding en móviles */
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    form > div.mb-3 {
+        padding: 10px 15px;
+    }
+}
